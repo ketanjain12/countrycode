@@ -1,0 +1,42 @@
+.main{
+    border: 1px solid white ;
+    color: white;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 30px;
+    /* background-color: aqua; */
+    
+}
+.heading{
+    color: whitesmoke;
+    font-size: large;
+    margin: 30px;
+    border: 1px solid white;
+    display: inline-block;
+    /* margin-left: 50px; */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px #2e9094;;
+}
+.header{
+  margin-top: 50px;
+}
+ button{
+    background-color: rgb(80, 190, 80);
+    border: 1px solid transparent;
+    border-radius: 12px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+ }
+ button:hover {
+    cursor: pointer;
+}
+span{
+    color: rgb(156, 156, 243);
+}
+.heading1{
+    text-transform: capitalize;
+}

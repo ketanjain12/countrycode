@@ -1,0 +1,399 @@
+.header {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for elevation */
+    border: 2px solid #ccc; /* Border around the container */
+    border-radius: 20px; /* Rounded corners */
+    margin: 20px auto;
+    max-width: 500px; /* Center and restrict the width */
+}
+
+.arrow {
+    color: black;
+    border: 1px solid gray;
+    border-radius: 40%;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: -50px;
+    margin-right: 420px;
+    background-color: rgb(221, 214, 214);
+}
+
+
+.headingh2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    text-align: left; /* Aligning text to the left */
+    white-space: nowrap; /* Prevents wrapping */
+    overflow: hidden; /* Ensures that excess content is not shown */
+    text-overflow: ellipsis; /* Adds ellipsis for overflow content */
+    margin-right: 250px; 
+}
+
+
+.emailheading {
+    font-size: 17px;
+    color: rgb(75, 59, 59);
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: -104px;
+}
+
+.emailheading2 {
+    font-size: 17px;
+    color: rgb(75, 59, 59);
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: -68px;
+    margin-top: -14px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #007BFF; /* Blue border on focus */
+}
+
+.otp-input-container {
+    display: flex;
+    justify-content: center; /* Aligns the boxes horizontally */
+    gap: 10px; /* Adds space between the boxes */
+    margin: 20px 0;
+}
+
+.otp-input {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.otp-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* margin-bottom: -50px; */
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* for r.esend email */
+.Resend{
+    margin-top: 25px;
+}
+.Resend1{
+    color: #333;
+}
+.Resend2{
+    background-color: #007BFF;
+    /* border: 1px solid transparent; */
+    /* color:  #333;
+    font-weight: bold;
+} */
+}
+
+/* passwordreset css */
+.passheading1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    text-align: left; /* Aligning text to the left */
+    white-space: nowrap; /* Prevents wrapping */
+    overflow: hidden; /* Ensures that excess content is not shown */
+    text-overflow: ellipsis; /* Adds ellipsis for overflow content */
+    margin-right: 240px; 
+}
+.passheading2{
+    font-size: 17px;
+    color: rgb(75, 59, 59);
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: -66px;
+}
+
+.passheading3{
+    font-size: 17px;
+    color: rgb(75, 59, 59);
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: -130px;
+    margin-top: -14px;
+}
+
+.passresetarrow1 {
+    color: black;
+    border: 1px solid gray;
+    border-radius: 40%;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: -100px;
+    margin-left: -390px;
+    background-color: rgb(221, 214, 214);
+}
+.passwordresetheader {
+    margin-top: 10px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for elevation */
+    border: 2px solid #ccc; /* Border around the container */
+    border-radius: 20px; /* Rounded corners */
+    margin: 20px auto;
+    max-width: 480px; /* Center and restrict the width */
+}
+
+/* set password css */
+.setpassarrow1 {
+    color: black;
+    border: 1px solid gray;
+    border-radius: 40%;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: -100px;
+    margin-left: -360px;
+    background-color: rgb(221, 214, 214);
+}
+.setpassheader {
+    margin-top: 10px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for elevation */
+    border: 2px solid #ccc; /* Border around the container */
+    border-radius: 20px; /* Rounded corners */
+    margin: 20px auto;
+    max-width: 480px; /* Center and restrict the width */
+}
+.setpass1{
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    text-align: left; /* Aligning text to the left */
+    white-space: nowrap; /* Prevents wrapping */
+    overflow: hidden; /* Ensures that excess content is not shown */
+    text-overflow: ellipsis; /* Adds ellipsis for overflow content */
+    margin-right: 160px; 
+}
+.setpass2{
+    font-size: 17px;
+    color: rgb(75, 59, 59);
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: -27px;
+}
+.setpass3{
+    font-size: 17px;
+    color: rgb(75, 59, 59);
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: -190px;
+    margin-top: -14px;
+}
+.setpass4{
+    text-align: left;
+}
+.arrow1 {
+    color: black;
+    border: 1px solid gray;
+    border-radius: 40%;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: -100px;
+    margin-right: 420px;
+    background-color: rgb(221, 214, 214);
+}
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.password-field {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.password-field input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.password-field .toggle-visibility {
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.password-field .toggle-visibility:hover {
+    color: #007bff;
+}
+
+.submit-btn {
+    background-color:#4E55D7;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* success page ui css */
+.success-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e8f5ff; /* Light blue background */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.success-icon {
+    background-color: #3DD394; /* Green background for success icon */
+    color: white;
+    border-radius: 40%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.success-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.success-message {
+    font-size: 16px;
+    color: #989898;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.success-button {
+    background-color: #4E55D7; /* Blue button background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+}
+
+.success-button:hover {
+    background-color: #3949ab; /* Darker blue on hover */
+}
+.success-icon1{
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}

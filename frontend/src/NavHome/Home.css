@@ -1,0 +1,166 @@
+/* src/App.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .main-container1 {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(to bottom, #000000, #222222);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header1 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: whitesmoke;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .buttons1 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+  
+  .view-courses1,
+  .watch-video1 {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 35px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .view-courses1 {
+    background-color: #1f4670;
+    color: white;
+  }
+  
+  .watch-video1 {
+    background-color: rgb(31, 28, 28);
+    color: white;
+    padding-right: 60px;
+    position: relative;
+    border: 1px solid greenyellow;
+  }
+  
+  .watch-video1 span {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    background: #ff4757;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.75rem;
+  }
+  
+  .student-count1 {
+    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid greenyellow;
+  border-radius: 40px;
+  gap: 20px;  /* Fixed the typo "12Px" to "12px" */
+ height: 70px;
+ width: 500px;
+}
+
+.student-count1 p {
+  color: #6ba9ec;
+  margin-top: 30px;
+  
+  /* padding: 20px 0;  Equal padding on top and bottom */
+}
+
+.avatars1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid green;
+}
+
+.avatars1 img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 5px; /* Add space between avatars */
+}
+
+.menu1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 30px;
+  }
+  .menu1:hover {
+    border: 2px solid rgb(122, 122, 218);
+    border-radius: 30px;
+    /* background-image: linear-gradient(45deg, red, blue, yellow, green);  Gradient */
+    background-origin: border-box;  /* Ensure the gradient applies to the border */
+    animation: runningGradient 4s linear infinite; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .menu1 button {
+    width: calc(40% - 7.5px);  /* Make each button take up half the width minus half the gap */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #333333;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s, border 0.5s;
+    position: relative;
+    z-index: 0;
+   
+  }
+  
+  .menu1 button:hover {
+    background-color: #444444;
+  }
+  
+  /* Adding a red+blue border with running gradient effect */
+  .menu1 button::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, red, blue, red, blue);
+    background-size: 400% 400%;
+    border-radius: 20px;
+    z-index: -1;
+    animation: borderAnimation 2s infinite;
+  }
+  
+  @keyframes borderAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  

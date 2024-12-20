@@ -1,0 +1,242 @@
+/* Existing styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f6;
+}
+
+.auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f7f6;
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 1rem;
+  margin-top: 12px;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+  width: 100%; /* Ensures all inputs have the same width */
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Soft glow effect */
+}
+
+.input-with-icon2 {
+  position: relative;
+  /* color: rgb(189, 30, 30); */
+}
+
+.input-icon2 {
+  position: absolute;
+  right: 10px; /* Move the icon to the right side */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #806c6c;
+}
+
+.auth-button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-button:hover {
+  background-color: #0056b3; /* Slightly darker blue */
+}
+
+.auth-footer {
+  margin-top: 1rem;
+  color: #555;
+}
+
+.auth-footer a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Password input container */
+.password-input-container {
+  position: relative;
+}
+
+.password-input-container input {
+  padding-right: 30px; /* Add padding for the icon */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px; /* Position the icon */
+  top: 50%; /* Center it vertically */
+  transform: translateY(-50%); /* Adjust for centering */
+  color: #333;
+  cursor: pointer;
+}
+
+/* Phone Number Styles */
+.phone-dropdown2 {
+  border-radius: 5px;
+  margin-top: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color:rgb(114, 114, 47)
+}
+
+.phone-dropdown2 .dropdown-item {
+  padding: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.phone-dropdown2 .dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.phone-number-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0 5px 5px 0;
+  outline: none;
+}
+
+.social-auth {
+  margin-top: 1.5rem;
+ 
+}
+
+.social-auth p{
+  color: black;
+  border: 2px solid transparent;
+  padding: 10px 0px;
+  margin: 0 30px;
+  background-color: rgb(16, 240, 16);
+  border-radius: 40px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 10px;
+  /* background-color: rgb(38, 231, 38);
+  padding-top: 5px;
+  padding-bottom: 5px; */
+  /* border-radius: 50px; */
+
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: #a05735;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  color: #007bff;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.success-text {
+  color: green;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.homepage h1{
+    text-transform: capitalize;
+}
+.in{
+  color: rgb(16, 145, 69);
+  /* text-decoration: dashed; */
+  font-weight: 700;
+  font-style: italic;
+}
+.signin{
+  border: 1px solid green;
+  display: inline;
+  padding:3px 15px;
+  background-color: rgba(12, 240, 12, 0.315);
+  border-radius: 20px;
+  /* margin-top: 20px; */
+}
+.signin:hover{
+  background-color: rgba(9, 218, 9, 0.315);
+}
+.forgot{
+  color: #007bff;
+  background-color: white;
+  font-weight: 600;
+  margin-left: 190px;
+  padding-top: -10px;
+}
+.fp{
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+/* for  remove Arrow icon */
+/* .flag-dropdown .arrow उस एरो आइकन को टार्गेट करता है जिसे आपको छुपाना है। */
+/* display: none !important; CSS का उपयोग करके आइकन को पूरी तरह हटा देता है। */
+
+.phone-dropdown2 .flag-dropdown .arrow {
+  display: none !important;
+}
+/* display: none: एलिमेंट को हटा देता है और उसका स्पेस भी पेज से गायब कर देता है। */
+/* !important: सुनिश्चित करता है कि यह रूल बाकी सभी CSS रूल्स से ज्यादा प्राथमिकता ले और इसे ओवरराइड न किया जाए। */
