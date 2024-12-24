@@ -105,7 +105,7 @@ const Navbar = () => {
     {/* homepage */}
     <div className="homepage">
 
-      <h1>hlo my name is ketan jain</h1>
+      {/* <h1>hlo my name is ketan jain</h1> */}
       {/* <ImageSlider/> */}
     </div>
     </div>
