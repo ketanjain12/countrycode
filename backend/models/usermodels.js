@@ -9,17 +9,9 @@ const userschema = new mongoose.Schema({
         required:true
     },
     phoneNo:{
-        type:Number,
-        required:true,
-    //   validate:{
-    //     validator:function (v){
-    //         return /^\d{10}$/.test(v);
-    //     },
-    //     message:"MobileNumber must be a 10-digit number",
-    //   },
-    
+        type:String,
+        required:true,    
     },
-
     password:{
         type:String,
         required:true

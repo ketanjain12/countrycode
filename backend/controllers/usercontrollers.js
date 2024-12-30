@@ -119,3 +119,35 @@ const { email,  password } = req.body;
     });
   }
 };
+
+exports.getallusers = async (req, res) => {
+  try {
+    // Fetch all users from the database
+    const users = await User.find({}, { password: 0 }); // Exclude the password field for security
+
+    if (!users.length) {
+      return res.status(404).json({
+        status: false,
+        msg: "No users found.",
+      });
+    }
+    // get the count of users
+    const userCount = users.length;
+
+    // Send response with the list of users
+    return res.status(200).json({
+      status: true,
+      msg: "Users retrieved successfully done.",
+      userCount,
+      users,
+      
+    });
+  } catch (error) {
+    console.error("Get All Users Error:", error.message);
+    return res.status(500).json({
+      status: false,
+      msg: "Something went wrong. Please try again later.",
+    });
+  }
+};
+

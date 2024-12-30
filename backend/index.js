@@ -2,6 +2,7 @@ const express = require("express");
 const dbconnect = require("./config/db");
 const userRoutes = require("./routes/userroutes"); // Renamed for clarity
 const reviewroutes=require("./routes/reviewsroutes")
+const profileroutes=require("./routes/profileRoutes")
 require("dotenv").config();
 // module.exports=router;
 
@@ -17,6 +18,7 @@ app.use(cors());
 // Routes
 app.use("/api", userRoutes);
 app.use("/review",reviewroutes)
+app.use("/profile",profileroutes)
 
 
 // Port Configuration
