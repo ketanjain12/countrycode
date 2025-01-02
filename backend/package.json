@@ -8,7 +8,8 @@
     "mongoose": "^8.9.3",
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.9.16",
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "swagger-ui-express": "^5.0.1"
   },
   "name": "backend",
   "version": "1.0.0",
@@ -16,10 +17,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "generate-doc": "node swagger.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "swagger-autogen": "^2.23.7"
+  }
 }
