@@ -3,6 +3,9 @@ const dbconnect = require("./config/db");
 const userRoutes = require("./routes/userroutes"); // Renamed for clarity
 const reviewroutes=require("./routes/reviewsroutes")
 const profileroutes=require("./routes/profileRoutes")
+
+const forgotPasswordRoutes = require('./routes/forgotPasswordRoutes');
+
 require("dotenv").config();
 // module.exports=router;
 
@@ -19,6 +22,8 @@ app.use(cors());
 app.use("/api", userRoutes);
 app.use("/review",reviewroutes)
 app.use("/profile",profileroutes)
+app.use('/forgot', forgotPasswordRoutes);
+
 
 
 // Port Configuration

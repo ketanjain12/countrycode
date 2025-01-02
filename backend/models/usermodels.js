@@ -15,7 +15,15 @@ const userschema = new mongoose.Schema({
     password:{
         type:String,
         required:true
+    },
+    // new filed added for otp
+    resetCode: {
+        type: String // Field to store the reset code
+    },
+    resetCodeExpiry: {
+        type: Date // Field to store the expiry of the reset code
     }
+
 
 
 })
