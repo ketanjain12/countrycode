@@ -5,6 +5,9 @@ const reviewRoutes = require("./routes/reviewsroutes");
 const profileRoutes = require("./routes/profileRoutes");
 const forgotPasswordRoutes = require('./routes/forgotPasswordRoutes');
 
+const otpRoutes = require('./routes/otpRoutes');
+
+
 require("dotenv").config();
 const app = express();
 
@@ -28,6 +31,8 @@ app.use("/api", userRoutes);
 app.use("/review", reviewRoutes);
 app.use("/profile", profileRoutes);
 app.use("/forgot", forgotPasswordRoutes);
+app.use('/api/otp', otpRoutes);
+
 
 // Port Configuration
 const PORT = process.env.PORT || 5000;
@@ -39,3 +44,7 @@ app.listen(PORT, () => {
 // path for the swagger
 // https://github.com/search?q=payment+gatway+nodejs&type=code
 // http://localhost:5000/api-docs/
+
+// https://www.passportjs.org/packages/passport-google-oauth20/
+
+// https://www.youtube.com/watch?v=pdd04JzJrDw

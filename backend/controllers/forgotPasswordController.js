@@ -36,13 +36,13 @@ exports.forgotPassword = async (req, res) => {
 
     user.resetCode = resetCode;
 
-    user.resetCodeExpiry = Date.now() + 15 * 60 * 1000; // 15 minutes expiry
+    user.resetCodeExpiry = Date.now() + 2 * 60 * 1000; // 15 minutes expiry
 
     await user.save();
 
     await sendEmail(email, 'Password Reset Code', `
         Hlo ${user.name}
-        This otp valid only 15 min .Ensure that fill otp on time 
+        This otp valid only 2 min .Ensure that fill otp on time 
         Your resetPassoword code is: ${resetCode}`);
 
     res.status(200).json(
