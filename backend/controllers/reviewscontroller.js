@@ -3,8 +3,9 @@ const Review=require('../models/reviewsmodels')
 
 exports.submitReview=async(req,res)=>{
 try {
-        const { name,
-             city,
+        const { 
+              name,
+              city,
               rating, 
               reviewContent, 
               profilePicture 

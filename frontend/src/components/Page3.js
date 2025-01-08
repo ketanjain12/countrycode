@@ -1,13 +1,21 @@
 // Page3.js
-import React from 'react';
+import React,{useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Page3 = () => {
   const navigate = useNavigate();
 
-  const goToSignUp = () => {
-    navigate('/signup'); // Navigate to Sign Up page
+  const handleKeyDown =(e)=>{
+    if(e.key === 'Enter' || e.key === 'ArrowRight'){
+      navigate('/signup')
+    }
   };
+  useEffect(()=>{
+    window.addEventListener('keydown',handleKeyDown);
+    return()=>{
+      window.removeEventListener('keydown',handleKeyDown)
+    };
+  },[]);
 
   return (
     <div style={{
@@ -41,8 +49,9 @@ const Page3 = () => {
       />
       <br></br>
       <button 
-  onClick={goToSignUp} 
-  style={{
+          // onClick={goToSignUp} 
+          onClick={()=>navigate('/signup')}
+           style={{
     padding: '12px 30px',         
     fontSize: '18px',             // Larger font size for more emphasis
     backgroundColor: 'green',    

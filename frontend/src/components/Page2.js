@@ -1,13 +1,23 @@
 // Page2.js
-import React from "react";
+import React,{useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 
 const Page2 = () => {
   const navigate = useNavigate();
 
-  const goToNextPage = () => {
-    navigate("/page3"); // Navigate to Page 3
+  const handleKeyDown = (e) => {
+  if(e.key === 'Enter' || e.key === 'ArrowRight'){
+    navigate('/page3')
+  }
   };
+  useEffect(() => {
+    window.addEventListener('keydown',handleKeyDown);
+  
+    return () => {
+      window.removeEventListener('keydown',handleKeyDown)
+    }
+  }, [])
+  
 
   return (
     <div
@@ -51,7 +61,8 @@ const Page2 = () => {
         />
         <br></br>
         <button
-          onClick={goToNextPage}
+          // onClick={goToNextPage}
+          onClick={()=>navigate('/page3')}
           style={{
             padding: "12px 30px",
             fontSize: "18px", // Larger font size for more emphasis

@@ -4,9 +4,8 @@ const userRoutes = require("./routes/userroutes");
 const reviewRoutes = require("./routes/reviewsroutes");
 const profileRoutes = require("./routes/profileRoutes");
 const forgotPasswordRoutes = require('./routes/forgotPasswordRoutes');
-
+const contactus=require('./routes/contactusroutes')
 const otpRoutes = require('./routes/otpRoutes');
-
 
 require("dotenv").config();
 const app = express();
@@ -32,7 +31,7 @@ app.use("/review", reviewRoutes);
 app.use("/profile", profileRoutes);
 app.use("/forgot", forgotPasswordRoutes);
 app.use('/api/otp', otpRoutes);
-
+app.use('/contact',contactus)
 
 // Port Configuration
 const PORT = process.env.PORT || 5000;
