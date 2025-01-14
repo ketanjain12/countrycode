@@ -34,7 +34,7 @@ app.use('/api/otp', otpRoutes);
 app.use('/contact',contactus)
 
 // Port Configuration
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.port || 5001;
 
 // Start Server
 app.listen(PORT, () => {
@@ -47,3 +47,5 @@ app.listen(PORT, () => {
 // https://www.passportjs.org/packages/passport-google-oauth20/
 
 // https://www.youtube.com/watch?v=pdd04JzJrDw
+
+
